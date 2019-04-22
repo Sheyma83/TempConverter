@@ -1,0 +1,30 @@
+<!DOCTYPE html >
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Temp Converter</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+		<body>
+	<h2>JavaScript Celcius to Fahrenhet</h2>
+
+	<p>Insert a number into one of the input fields below:</p>
+	<input id="c" type="number" placeholder="Inter the value of Celsius"/>
+	<p/>
+    <input id="f" type="number" placeholder="Fahrenheit"/>
+    <input type="button" onClick='celtofah()' value="Convert" />
+
+	
+
+	<script>
+		var cel=document.getElementById("c");
+		var fah=document.getElementById("f");
+		function celtofah(){
+			fah.value=(1.8*cel.value)+32
+		}
+	
+
+	</script>
+	</body>
+</html>
